@@ -10,10 +10,13 @@
 }
 .timeSelectorWrapper{
     position: absolute;
+    display:none;
     top:20px;
     left:0px;
-    width:300px;
-    padding:20px;
+    width:130px;
+    padding:10px;
+    padding-right:20px;
+    padding-left:30px;
     z-index:99;
     background-color:white;
     border:0.5px solid rgb(218, 218, 218);
@@ -30,4 +33,51 @@
 }
 .closeTimePicker:hover{
     color:#333;
+}
+.mintsIncrease{
+    display:block;
+    cursor: pointer;
+    padding:10px;
+    margin-bottom:5px;
+    text-align:center;
+
+}
+.mintsDecrease{
+    display:block;
+    cursor: pointer;
+    padding:10px;
+    margin-top:5px;
+    text-align:center;
+
+}
+.mintsWrapper{
+    padding:5px;
+    border:0.5px solid rgb(221, 221, 221);
+    width:35px;
+    text-align:center;
+}
+.controlloersWrapper{
+    margin-top:20px;
+    font-size:18px;
+}
+.hoursIncreas{
+    display:block;
+    cursor: pointer;
+    padding:10px;
+    margin-bottom:5px;
+    text-align:center;
+
+}
+.hoursDecrease{
+    display:block;
+    cursor: pointer;
+    padding:10px;
+    margin-top:5px;
+    text-align:center;
+}
+.hoursWrapper{
+    padding:5px;
+    border:0.5px solid rgb(221, 221, 221);
+    width:35px;
+    text-align:center;
 }
