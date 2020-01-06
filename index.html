@@ -6,13 +6,12 @@
 	<meta http-equiv = "X-UA-Compatible" content="IE=edge">
     <!-- responsive meta  tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Timepicker | Dynamic table inserting </title>
+	<title>Timepicker | Dynamic table inserting</title>
     <!-- bootstrap 3 arabic -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-arabic.min.css">
     <!-- font awesome -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- custom style css file -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/timepicker.css">
     <!-- scripts for HTML 5 to compatible IE -->
 	<!--[if lt IE 9]>
@@ -26,18 +25,19 @@
         <div class="row controllers">
             <div class="col-md-4 col-xs-12 form-group">
                 <label>اليـــوم</label>
-                <select class="form-control input-sm">
-                    <option>السـبت</option>
-                    <option>الأحد</option>
-                    <option>الاثنين</option>
-                    <option>الثلاثاء</option>
-                    <option>الأربعاء</option>
-                    <option>الخميس</option>
-                    <option>الجمعة</option>
+                <select class="form-control input-sm daysSelectors">
+                    <option value="السبت">السـبت</option>
+                    <option value="الأحد">الأحد</option>
+                    <option value="الاثنين">الاثنين</option>
+                    <option value="الثلاثاء">الثلاثاء</option>
+                    <option value="الأربعاء">الأربعاء</option>
+                    <option value="الخميس">الخميس</option>
+                    <option value="الجمعة">الجمعة</option>
                 </select>
             </div>
             <div class="col-md-4 col-xs-12 form-group">
-                <button class="btn btn-sm btn-primary">إضافة</button>
+                <br>
+                <button class="btn btn-sm btn-primary insertingRowBtn" style="margin-top:5px;">إضافة</button>
             </div>
         </div>
         <div class="tableWrapper">
@@ -50,7 +50,11 @@
                     </tr>
                 </thead>
                 <tbody id="dynamicRowsWrapper">
-
+                        <tr><td>السبت</td> 
+                            <td><div class='timepickerInputWrapper'><div class='timeSelectorWrapper'><span class='closeTimePicker'>x</span>
+                                <div class='row'></div>
+                            </div><input type='text' class='form-control input-sm timepickerInput'></div></td> 
+                            <td>XXXXXXXXXX</td></tr>
                 </tbody>
             </table>
         </div>
@@ -64,7 +68,6 @@
     <!-- bootstrap js script -->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <!-- custom main js file -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/timepicker.js"></script>
 </body>
 </html>
