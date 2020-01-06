@@ -1,27 +1,19 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8" name="description" content="PSD by KHALID ELEWA CODED by KHALID AHMED FAHMY">
+	<meta charset="utf-8" name="description" content="Timepicker plugin">
     <!-- IE compatible meta tag -->
 	<meta http-equiv = "X-UA-Compatible" content="IE=edge">
     <!-- responsive meta  tag -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Timepicker | Dynamic table inserting </title>
     <!-- bootstrap 3 arabic -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-arabic.min.css">
-    <!-- hover -->
-    <link rel="stylesheet" type="text/css" href="css/hover-min.css">
-    <!-- animate lib -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
-    <!-- sweet alert -->
-    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
-    <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-arabic.min.css">
     <!-- font awesome -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- custom style css file -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/timepicker.css">
     <!-- scripts for HTML 5 to compatible IE -->
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -52,31 +44,13 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">اليــوم</th>
+                    <th scope="col">الوقـت مـن</th>
+                    <th scope="col">الوقـت إلى</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    </tr>
-                    <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    </tr>
+                <tbody id="dynamicRowsWrapper">
+
                 </tbody>
             </table>
         </div>
@@ -84,17 +58,13 @@
     <!-- ================== end website ================== -->
     <!-- ================== scripts ================== -->
     <!-- jquery script -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
     <!-- slick -->
-    <script type="text/javascript" src="js/jqueryMigrate.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <!-- wow animation script -->
-    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/jqueryMigrate.js"></script>
     <!-- bootstrap js script -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- sweet alert -->
-    <script type="text/javascript" src="js/sweetalert.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <!-- custom main js file -->
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/timepicker.js"></script>
 </body>
 </html>
