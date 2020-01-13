@@ -49,7 +49,40 @@
                     </tr>
                 </thead>
                 <tbody id="dynamicRowsWrapper">
-                
+                    <tr>
+                        <td>السبت</td>
+                        <td> 
+                            <div class='timepickerInputWrapper'>
+                                <div class='timeSelectorWrapper'>
+                                    <!-- <span class='closeTimePicker'>x</span> -->
+                                    <div class='row controlloersWrapper'>
+                                        <div class='col-xs-4 form-group ControllerWrapper MintsWrapper'>
+                                            <label class="timePickerLabel">Mintues</label>
+                                            <span class='mintsIncrease timePickerController increaseController'>+</span>
+                                            <input  class='mintsWrapper timePickerInput' value='0'>
+                                            <span class='mintsDecrease timePickerController decreaseController'>-</span>
+                                        </div> 
+                                        <div class='col-xs-4 form-group ControllerWrapper HoursWrapper'> 
+                                            <label class="timePickerLabel">Hours</label>
+                                            <span class='hoursIncreas timePickerController increaseController'>+</span> 
+                                            <input class='hoursWrapper timePickerInput' value='1'> 
+                                            <span class='hoursDecrease timePickerController decreaseController'>-</span> 
+                                        </div>
+                                        <div class='col-xs-4 form-group  ControllerWrapper TimeTypeWrapper'> 
+                                            <label class="timePickerLabel">Type</label>
+                                            <span class="btn btn-xs btn-default timeTypeOption selectedOption" style='margin-bottom:25px;' data-value="PM">PM</span>
+                                            <span class="btn btn-xs btn-default timeTypeOption" data-value="AM">AM</span>
+                                        </div>
+                                    </div>
+                                    <div >
+                                        <button class="btn btn-xs btn-success registerTime">OK!</button>
+                                        <button class="btn btn-xs btn-danger cancelTime">Cancel</button>
+                                    </div>
+                                </div>
+                                <input type='text' class='form-control input-sm timepickerInput'>
+                            </div>
+                        </td> 
+                    </tr>
                 </tbody>
             </table>
         </div>
