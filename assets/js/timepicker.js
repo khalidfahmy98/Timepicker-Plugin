@@ -2,31 +2,35 @@ $(document).ready(function(){
     $(".insertingRowBtn").click(function(){
         $("#dynamicRowsWrapper").append("<tr><td>"+ $(".daysSelectors").children("option:selected").val() +"</td> \
         <td> \
-        <div class='timepickerInputWrapper'>\
-            <div class='timeSelectorWrapper'>\
-                <span class='closeTimePicker'>x</span>\
-                <div class='row controlloersWrapper'>\
-                    <div class='col-xs-4 form-group MintsWrapper'>\
-                        <span class='mintsIncrease'>+</span>\
-                        <input  class='mintsWrapper' value='0'>\
-                        <span class='mintsDecrease'>-</span>\
-                    </div> \
-                    <div class='col-xs-4 form-group HoursWrapper'> \
-                        <span class='hoursIncreas'>+</span> \
-                        <input class='hoursWrapper' value='1'> \
-                        <span class='hoursDecrease'>-</span> \
-                    </div>\
-                    <div class='col-xs-4 form-group HoursWrapper'> \
-                        <span class='TimeType'>+</span> \
-                        <input class='hoursWrapper' value='1'> \
-                        <span class='hoursDecrease'>-</span> \
-                    </div>\
+        <div class='timepickerInputWrapper'> \
+        <div class='timeSelectorWrapper'>\
+            <div class='row controlloersWrapper'>\
+                <div class='col-xs-4 form-group ControllerWrapper MintsWrapper'>\
+                    <label class='timePickerLabel'>Mintues</label>\
+                    <span class='mintsIncrease timePickerController increaseController'>+</span>\
+                    <input  class='mintsWrapper timePickerInput' value='0'>\
+                    <span class='mintsDecrease timePickerController decreaseController'>-</span>\
+                </div> \
+                <div class='col-xs-4 form-group ControllerWrapper HoursWrapper'> \
+                    <label class='timePickerLabel'>Hours</label>\
+                    <span class='hoursIncreas timePickerController increaseController'>+</span> \
+                    <input class='hoursWrapper timePickerInput' value='1'> \
+                    <span class='hoursDecrease timePickerController decreaseController'>-</span> \
+                </div>\
+                <div class='col-xs-4 form-group  ControllerWrapper TimeTypeWrapper'> \
+                    <label class='timePickerLabel'>Type</label>\
+                    <span class='btn btn-xs btn-default timeTypeOption selectedOption' style='margin-bottom:25px;' data-value='PM'>PM</span>\
+                    <span class='btn btn-xs btn-default timeTypeOption' data-value='AM'>AM</span>\
                 </div>\
             </div>\
-            <input type='text' class='form-control input-sm timepickerInput'>\
+            <div >\
+                <button class='btn btn-xs btn-success registerTime'>OK!</button>\
+                <button class='btn btn-xs btn-danger cancelTime'>Cancel</button>\
+            </div>\
         </div>\
-    </td> \
-       </tr>");
+        <input type='text' class='form-control input-sm timepickerInput'>\
+    </div>\
+        </tr>");
     });
     $("#dynamicRowsWrapper").on('focus','.timepickerInput',function(){
         $(this).siblings(".timeSelectorWrapper").slideDown();
